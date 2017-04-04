@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>我们产品详情页</title>
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/product.css" rel="stylesheet" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function () {
+            var index = 0;
+            //下一张按钮事件
+            $(".next").click(function () {
+                $(".item").eq(index).fadeOut(1000);
+                index++;
+                if (index > $(".item").length - 1) {
+                    index = 0;
+                }
+                $(".item").eq(index).fadeIn(300);
+            });
+            //上一张按钮事件
+            $(".pre").click(function () {
+                $(".item").eq(index).fadeOut(1000);
+                index--;
+                if (index < 0) {
+                    index = $(".item").length - 1;
+                }
+                $(".item").eq(index).fadeIn(300);
+            });
+        });
+
+
+        function temp(id) {
+            document.getElementById("temp").src = id;
+        }
+        function temps(id) {
+            alert(id);
+        }
+        //左侧下拉滚动
+        $(window).scroll(function() {
+            var windowHeight = $(window).scrollTop() +145;
+            var sideHeight = $('.leftDetail').height();
+            if (windowHeight > sideHeight) {
+                $('.leftDetail').css({
+                    'position' : 'fixed',
+                    top: -(sideHeight - 630)
+                });
+            } else {
+                $('.leftDetail').css({
+                    'position' : 'static'
+                });
+            }
+        });
+        $(function(){
+            $("#an li").click(function(){
+                $("#an li").eq($(this).index()).addClass("navdown").siblings().removeClass("navdown");
+            })
+        })
+    </script>
+</head>
+<body>
+<!--  header -->
+<div class="kong">
+
+</div>
+<div class="top" >
+    <div class="container">
+        <div class="topContent">
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo" /></a></div>
+            <div class="navigation">
+                <ul class="topnav">
+                    <li><a href="index1.html">首页</a></li>
+                    <li><a href="aboutour.html" class="current">关于我们</a></li>
+                    <li><a href="Ourteam.html">我们的团队</a></li>
+                    <li><a href="ourCase.html" >我们的案例</a></li>
+                    <li><a href="connectionour.html">联系我们</a></li>
+                    <li><a href="zhaopin.html">招聘</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  标语 -->
+<div class="banner">
+    <h1>关于我们</h1>
+    <p>以提高业务效率及流畅性为目标，带动企业流程电子化及智能化。我们现有的产品涉及各行各业，主要是运用欧美流行的BABOK辨析法将管理层和最终用户的核心需求进行彻底分析，用最具专业性的分析方式为处在不同行业...</p>
+</div>
+
+<!--  回到首页 -->
+<div class="backHomepage">
+    <a href="aboutour.html">返回关于我们</a>
+</div>
+
+<!--  产品详情 -->
+<div class="ProductDetail">
+    <div class="container">
+        <div class="detail">
+            <div class="leftDetail" id="an">
+                <ul class="items" style="display:block;">
+                    <li><a href="#pro1"  onmousedown="this.style.background='#63bfe9';this.style.color='#FFF';" onclick="temp(this.id);">金融交易风险分析<br/>管理软件系统</a></li>
+                    <li><a href="#pro1" onmousedown="this.style.background='#63bfe9';this.style.color='#FFF';" onclick="temp(this.id);">Sohema<br/>客户关系管理系统</a></li>
+                    <li><a href="#pro1" onmousedown="this.style.background='#63bfe9';this.style.color='#FFF';" onclick="temp(this.id);">Diggit<br/>电子商务社交平台</a></li>
+                    <li><a href="#pro1" onmousedown="this.style.background='#63bfe9';this.style.color='#FFF';" onclick="temp(this.id);">Collaware<br/>数据分析引擎</a></li>
+                </ul>
+            </div>
+            <div class="rightDetail" id="pro1">
+                <div class="box" >
+                    <p class="da">金融交易风险分析管理软件系统</p>
+                    <p class="line">_______________________________________________________________________________________________________________________________________________________</p>
+                    <p>产品描述：<span class="ziti">该产品通过先进的数理模型，例如蒙特卡洛模型，根据巴塞尔协议Ⅲ 的标准，对交易合约进行
+        估值，分析，定量化，现代化，和科学化。</span>
+                    </p>
+                    <p>产品类型：<span class="ziti">产品分析软件</span></p>
+                </div>
+
+                <div id="content">
+                    <div id="picbox">
+                        <ul class="buttons">
+                            <li><a href="###" class="pre arrow"><img src="images/qian.png" class="qian"></a></li>
+                            <li><a href="###" class="next arrow"><img src="images/hou.png" class="hou"></a></li>
+                        </ul>
+                        <div class="item" style="display:block;" >
+                            <div class="pic">
+                                <img src="images/feedback-lp.png" />
+                            </div>
+                            <div class="des">产品部分图片展示1</div>
+                        </div>
+                        <div class="item" style="display:none;">
+                            <div class="pic">
+                                <img src="images/feedback-lp.png" />
+                            </div>
+                            <div class="des">产品部分图片展示2</div>
+                        </div>
+                        <div class="item" style="display:none;">
+                            <div class="pic">
+                                <img src="images/feedback-lp.png" />
+                            </div>
+                            <div class="des">产品部分图片展示3</div>
+                        </div>
+                    </div>
+                </div>
+                <!--产品案例-->
+                <div class="lanse">
+                    <p>产品案例</p>
+                </div>
+                <div class="content1">
+                    <div class="case">
+                        <dl>
+                            <dt><img src="images/casePic1.png" /></dt>
+                            <dd class="caseBox1">中化石油有限公司 </dd>
+                            <dd class="caseBox2">北京</dd>
+                        </dl>
+                    </div>
+                    <div class="case">
+                        <dl>
+                            <dt><img src="images/casePic2.png" /></dt>
+                            <dd class="caseBox1">枫客公司</dd>
+                            <dd class="caseBox2">厦门</dd>
+                        </dl>
+                    </div>
+                    <div class="case">
+                        <dl>
+                            <dt><img src="images/casePic4.png" /></dt>
+                            <dd class="caseBox1">南顺鳄鱼园有限公司 </dd>
+                            <dd class="caseBox2">厦门</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footerContent">
+            <div class="footerLeft">
+                <div>
+                    <a href="#"><img src="images/footer-pic1.png" /></a>
+                </div>
+            </div>
+            <div class="footerCenter">
+                <ul>
+                    <li>电话：(0592) 5962 616 </li>
+                    <li>电邮：info@xmpharos.com</li>
+                </ul>
+            </div>
+            <div class="footerRight">
+                <ul>
+                    <li>总部地址：厦门市思明区软件园二期望海路北二区23号之二207</li>
+                    <li>开发部地址：厦门市火炬高新区软件园创新大厦A区#302B单元</li>
+                </ul>
+            </div>
+            <p>道诚(厦门)信息科技有限公司&nbsp;&nbsp;    Copyright 2014 © Pharos Systems International.All rights reserved.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

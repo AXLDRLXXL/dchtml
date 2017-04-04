@@ -1,0 +1,33 @@
+﻿body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input { margin: 0; padding: 0;}
+body { color: #5a5a5a; font-family: "微软雅黑"; }
+ul { list-style-type: none; }
+a { text-decoration: none; }
+img{border:none;}
+.container { width: 1206px; margin: 0 auto; padding: 0; }
+
+/* header  */
+.kong{height: 98px;}
+.top{height:98px;background-color: #f6f7f9;}
+.topContent{margin-left:149px;margin-right:149px;}
+.logo{width:132px;height:52px;float:left;padding-top:23px;}
+.top .navigation {float: right;text-align:center;line-height:98px;}
+.top .navigation  ul{width:600px;height:98px;}
+.top .navigation  ul li{float:left;width:100px;height:98px;}
+.top .navigation  ul li a{font-size:16px;color:#7c8ea3;}
+.top .navigation  ul li a:hover{color:#e8c55c;}
+.top .navigation  ul li .current{color:#e8c55c;}
+
+/* 标语  */
+.banner{width:100%;height:300px;background:url(../images/banner.jpg) no-repeat center top;text-align:center;color:#f1f2f4;}
+.banner h1{padding:100px 0 35px 0;font-size:68px;font-family:"宋体";}
+.banner p{font-size:14px;}
+
+
+/* footer  */
+.footer { height: 195px; background: #222a33;font-size:12px;color:#9093a2;clear:both;font-family:"微软雅黑" }
+.footer .footerContent{margin-left:150px;margin-right:150px;padding-top:30px;}
+.footer .footerLeft{float:left;margin-right: 150px;}
+.footer .footerCenter{float:left;margin-left: 0px;margin-right: 65px}
+.footer .footerRight{float: left;}
+.footer .footerContent ul li{line-height:28px;}
+.footer p{padding-top:35px;text-align:center;clear:both;color: #5f626b}

@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>招聘</title>
+		<link href="css/common.css" rel="stylesheet" />
+		<link href="css/zhaopin.css" rel="stylesheet" />
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-latest.js"></script>
+		<script type="text/javascript">
+			function temp(id) {
+				$(".zp").removeClass("current");
+				$("#" + id).addClass("current");
+			}
+
+			//左侧下拉滚动
+			$(window).scroll(function() {
+				var windowHeight = $(window).scrollTop() + 50;
+				var sideHeight = $('.leftDetail').height();
+				if(windowHeight > sideHeight) {
+					$('.leftDetail').css({
+						'position': 'fixed',
+						top: -(sideHeight - 420)
+					});
+
+				} else {
+					$('.leftDetail').css({
+						'position': 'static'
+					});
+
+				}
+			});
+
+			$(function() {
+				$("#an li").click(function() {
+					$("#an li").eq($(this).index()).addClass("navdown").siblings().removeClass("navdown");
+				})
+			})
+		</script>
+
+	</head>
+
+	<body>
+		<!--  header -->
+		<div class="kong">
+
+		</div>
+		<div class="top">
+			<div class="container">
+				<div class="topContent">
+					<div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt="logo" /></a>
+					</div>
+					<div class="navigation">
+						<ul class="topnav">
+							<li>
+								<a href="index1.html">首页</a>
+							</li>
+							<li>
+								<a href="aboutour.html">关于我们</a>
+							</li>
+							<li>
+								<a href="Ourteam.html">我们的团队</a>
+							</li>
+							<li>
+								<a href="ourCase.html">我们的案例</a>
+							</li>
+							<li>
+								<a href="connectionour.html">联系我们</a>
+							</li>
+							<li>
+								<a href="zhaopin.html" class="current">招聘</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--  标语 -->
+		<div class="banner">
+			<h1>期待你的加入</h1>
+			<p>我们的使命，是让工作变得更容易</p>
+			<p id="we1"></p>
+		</div>
+
+		<!--招聘-->
+		<div class="renwu">
+			<div class="container">
+				<div class="leftDetail" id="an">
+					<ul>
+						<li>
+							<a href="#we1" id="zp1" class="current zp" onclick="temp('zp1')">高级.NET工程师</a>
+						</li>
+						<li>
+							<a href="#we2" id="zp2" class=" zp" onclick="temp('zp2');">网页设计师</a>
+						</li>
+						<li>
+							<a href="#we3" id="zp3" class=" zp" onclick="temp('zp3');">.NET工程师</a>
+						</li>
+						<li>
+							<a href="#we4" id="zp4" class=" zp" onclick="temp('zp4')">HTML5工程师</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="rightdetail">
+					<div class="rightDetail">
+						<div class="box">
+							<div class="zhiwei1">
+								<p>职位：<span class="zw1">高级.NET工程师 </span> <span class="zw2">职位分类：技术类 </span><span class="zw2">工作地点：厦门</span><span class="zw2">人数：若干人</span></p>
+								<p><span class="zw3">学历要求：大专以上</span><span class="zw3">工作年限：4年以上</span> <span class="zw3">薪酬：面议</span></p>
+								<p class="line">__________________________________________________________________________________________________________________</p>
+								<p>工作职责：</p>
+								<p>1.负责公司项目系统架构、项目开发以及进度安排等工作；</p>
+								<p>2.完成产品的功能、性能、可靠性等测试。</p>
+								<p class="line">__________________________________________________________________________________________________________________</p>
+								<p>工作要求：</p>
+								<p>1.精通B/S网站开发，精通C#, 熟悉Asp.net以及MVC的开发；</p>
+								<p>2.熟悉HTML/XHTML、CSS、Ajax等前端相关技术，熟悉W3C网页标准；熟练掌握JavaSrcipt开发；对JS面向对象编程有一定了解，并熟练使用JQuery框架。</p>
+								<p>3.有较好的团队协作精神，良好的沟通能力有良好的文档编写习惯四年以上开发；</p>
+								<p>4.有手机、平板电脑终端、应用开发经验；</p>
+								<p>5.有门户、商城系统等开发，能独挡一面者优先。</p>
+								<p id="we2">&nbsp;</p>
+								<p class="line1">_________________________________________________________________________________________________________________</p>
+							</div>
+							<div class="zhiwei1">
+								<p>职位：<span class="zw1">网页设计师 </span> <span class="zw2">职位分类：技术类 </span><span class="zw2">工作地点：厦门</span><span>人数：若干人</span></p>
+								<p><span class="zw3">学历要求：大专以上</span><span class="zw3">工作年限：4年以上</span > <span class="zw3">薪酬：面议</span></p>
+								<p class="line">__________________________________________________________________________________________________________________</p>
+								<p>工作职责：</p>
+								<p>1.负责公司项目系统架构、项目开发以及进度安排等工作；</p>
+								<p>2.完成产品的功能、性能、可靠性等测试。</p>
+								<p class="line">__________________________________________________________________________________________________________________</p>
+								<p>工作要求：</p>
+								<p>1.精通B/S网站开发，精通C#, 熟悉Asp.net以及MVC的开发；</p>
+								<p>2.熟悉HTML/XHTML、CSS、Ajax等前端相关技术，熟悉W3C网页标准；熟练掌握JavaSrcipt开发；对JS面向对象编程有一定了解，并熟练使用JQuery框架。</p>
+								<p>3.有较好的团队协作精神，良好的沟通能力有良好的文档编写习惯四年以上开发；</p>
+								<p>4.有手机、平板电脑终端、应用开发经验；</p>
+								<p>5.有门户、商城系统等开发，能独挡一面者优先。</p>
+								<p id="we3">&nbsp;</p>
+								<p class="line1">_________________________________________________________________________________________________________________</p>
+
+							</div>
+							<div class="zhiwei1">
+								<p>职位：<span class="zw1">.NET工程师 </span> <span class="zw2">职位分类：技术类 </span><span class="zw2">工作地点：厦门</span><span>人数：若干人</span></p>
+								<p><span class="zw3">学历要求：大专以上</span><span class="zw3">工作年限：4年以上</span> <span class="zw3">薪酬：面议</span></p>
+								<p class="line">__________________________________________________________________________________________________________________</p>
+								<p>工作职责：</p>
+								<p>1.负责公司项目系统架构、项目开发以及进度安排等工作；</p>
+								<p>2.完成产品的功能、性能、可靠性等测试。</p>
+								<p class="line">__________________________________________________________________________________________________________________</p>
+								<p>工作要求：</p>
+								<p>1.精通B/S网站开发，精通C#, 熟悉Asp.net以及MVC的开发；</p>
+								<p>2.熟悉HTML/XHTML、CSS、Ajax等前端相关技术，熟悉W3C网页标准；熟练掌握JavaSrcipt开发；对JS面向对象编程有一定了解，并熟练使用JQuery框架。</p>
+								<p>3.有较好的团队协作精神，良好的沟通能力有良好的文档编写习惯四年以上开发；</p>
+								<p>4.有手机、平板电脑终端、应用开发经验；</p>
+								<p>5.有门户、商城系统等开发，能独挡一面者优先。</p>
+								<p id="we4">&nbsp;</p>
+							<p class="line">______________________________________________________________________________________________________________________</p>
+							<p>&nbsp;</p>
+							</div>
+							
+						
+						<div class="zhiwei1">
+							<p>职位：<span class="zw1">HTML5工程师 </span> <span class="zw2">职位分类：技术类 </span><span class="zw2">工作地点：厦门</span><span class="zw2">人数：若干人</span></p>
+							<p><span class="zw3">学历要求：大专以上</span><span class="zw3">工作年限：一年以上经验</span> <span class="zw3">薪酬：6000--12000</span></p>
+							<p class="line">_______________________________________________________________________________________________________________________</p>
+							<p>工作职责：</p>
+							<p>1.参与项目需求讨论。</p>
+							<p>2.参与APP项目的前端界面开发。</p>
+							<p class="line">_______________________________________________________________________________________________________________________</p>
+							<p>工作要求：</p>
+							<p>1.熟练HTML 5/CSS 3，jQuery、Bootstrap、Node.js及主流的 JavaScript框架，了解SQLite相关语法；</p>
+							<p>2.对WebApp或原生App有一年以上实际经验，大专及以上学历；</p>
+							<p>3.了解IOS、Android移动端开发技术标准；</p><br />
+
+								<div>
+									<p class="xia">请您将您的详细工作简历、相关学历、近照发送至：hr@xmpharos.com 我们收到您的简历后，会主动与您联系。</p>
+								</div>
+						</div>
+						<div class="anniu">
+							<p>
+								<a href="#" style="text-align: center">马上发送简历<span></span></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<div class="footer">
+			<div class="container">
+				<div class="footerContent">
+					<div class="footerLeft">
+						<div>
+							<a href="#"><img src="images/footer-pic1.png" /></a>
+						</div>
+					</div>
+					<div class="footerCenter">
+						<ul>
+							<li>电话：(0592) 5962 616 </li>
+							<li>电邮：info@xmpharos.com</li>
+						</ul>
+					</div>
+					<div class="footerRight">
+						<ul>
+							<li>总部地址：厦门市思明区软件园二期望海路北二区23号之二207</li>
+							<li>开发部地址：厦门市火炬高新区软件园创新大厦A区#302B单元</li>
+						</ul>
+					</div>
+					<p>道诚(厦门)信息科技有限公司&nbsp;&nbsp; Copyright 2014 © Pharos Systems International.All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

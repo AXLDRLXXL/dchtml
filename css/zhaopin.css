@@ -1,0 +1,138 @@
+/* 招聘*/
+
+.top {
+	background-color: #f6f7f9;
+	;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.renwu {
+	height: auto;
+	margin-left: 70px;
+}
+
+.rightDetail .box .xia {
+	text-align: center;
+	color: #b6b7b9;
+	margin-top: 100px;
+	font-size: 16px;
+}
+
+.renwu a {
+	text-decoration: none;
+	margin-bottom: 40px;
+}
+
+.anniu p a {
+	background: url(../images/aboutUs-bg.png);
+	width: 198px;
+	height: 58px;
+	display: block;
+	line-height: 58px;
+	margin: 0 auto;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 35px;
+	margin-bottom: 50px;
+	margin-left: 300px;
+}
+
+.anniu p a span {
+	padding-left: 10px;
+	display: inline-block;
+	width: 7px;
+	height: 11px;
+}
+
+.box.zhiwei1 {
+	color: #737373;
+	font-size: 16px;
+}
+
+.box .zhiwei1 .zw1 {
+	color: #4a91c9;
+	font-size: 16px;
+	margin-right: 100px;
+}
+
+.box .zhiwei1 .zw2 {
+	font-size: 16px;
+	margin-right: 100px;
+}
+
+.box .zhiwei1 .zw3 {
+	font-size: 16px;
+	margin-right: 90px;
+}
+
+.box .zhiwei1 p {
+	margin-left: 10px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.box .zhiwei1 .line1 {
+	margin-top: 50px;
+	margin-bottom: 34px;
+	margin-left: 10px;
+	color: #aacfe9
+}
+
+.box .zhiwei1 .line {
+	margin-top: 4px;
+	margin-bottom: 20px;
+	color: #eeeeee;
+}
+
+.leftDetail {
+	width: 184px;
+	float: left;
+}
+
+.leftDetail ul {
+	width: 184px;
+	margin-top: 65px;
+	position: relative;
+}
+
+.leftDetail ul li {
+	width: 126px;
+	height: 44px;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 44px;
+	margin-bottom: 20px;
+	margin-top: 35px;
+	border-radius: 30px;
+}
+
+.leftDetail ul li a {
+	display: block;
+	color: #7099ab;
+	border-radius: 30px;
+}
+
+.leftDetail .current {
+	background: #63bfe9;
+	color: #fff;
+}
+
+.rightDetail {
+	width: 1020px;
+	float: right;
+}
+
+.rightDetail .box {
+	padding-top: 65px;
+}
+
+.rightDetail .box p {
+	line-height: 25px;
+	font-size: 16px;
+	text-align: left;
+	margin-right: 180px;
+}

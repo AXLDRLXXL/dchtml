@@ -1,0 +1,34 @@
+/* 回到首页  */
+.backHomepage { height: 80px; background: #f6f7f9; text-align: center; }
+.backHomepage a { color: #c8ccd2; height: 80px; text-align: center; display: inline-block; background:url(../images/backHomepage.png) no-repeat left center;padding-left:25px;line-height:80px;}
+
+/*我们的服务*/
+.top{background-color: #f6f7f9;;  left: 0;  position: fixed;  top: 0;  width: 100%;  z-index: 1000;}
+.banner p{margin-left: 258px;margin-right: 258px;}
+.content1{height:auto;text-align:center;padding-top:40px;margin-bottom:50px;}
+.content1 .case2{width:240px;height:140px;border:1px solid #dbe6ef;float:left;margin-top:-10px;margin-bottom:20px;margin-left:180px;}
+.content1 .case3{width:240px;height:140px;border:1px solid #dbe6ef;float:left;margin-top:-10px;margin-bottom:20px;margin-left:60px;}
+.content1 .case4{width:240px;height:140px;border:1px solid #dbe6ef;float:left;margin-top:-10px;margin-bottom:20px;margin-left:60px;}
+.content1 .case2 dt{ height:94px;padding:20px 0 10px 0;}
+.content1 .case3 dt{ height:94px;padding:20px 0 10px 0;}
+.content1 .case4 dt{ height:94px;padding:20px 0 10px 0;}
+.case1{width:240px;height:140px;border:1px solid #dbe6ef;float:left;margin-top:30px;margin-bottom:50px;margin-left:60px;}
+.case1 dt{ height:94px;padding-top:30px;padding-left: 20px; }
+.serve p{ text-align: center; padding: 50px 0 0 0;font-size: 30px; }
+.serve3 p{text-align: center; padding: 140px 0 0 0;font-size: 30px;}
+.serve5 p{text-align: center; padding: 240px 0 0 0;font-size: 30px;}
+.serve4 p{text-align: center; padding: 80px 0 0 0;font-size: 30px;}
+.line{ text-align: center; padding-top:4px;padding-bottom: 30px; font-size: 14px; color:#eeeeee; }
+.serve1{color:#9d9d9d;  text-align: left;margin-left: 150px;margin-right: 150px;font-size: 14px }
+.serve1 p{line-height: 25px;color: #939ba7;font-size: 16px;}
+.serve2 p{color: #939ba7;  text-align: center;margin-left: 220px;margin-right: 220px;margin-bottom: 60px;font-size: 14px }
+.ourService .case1{width:240px;height:140px;border:1px solid #dbe6ef;float:left;margin-top:30px;margin-bottom:60px;margin-left:480px;}
+.coursexinging-text p{
+            margin-left: 180px;
+            margin-right: 180px;
+            margin-top: 10px;
+            text-align:left;
+            margin-bottom: 20px;
+            color:#5e5e5e;
+            line-height:25px;
+        }

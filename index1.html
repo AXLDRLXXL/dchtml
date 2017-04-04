@@ -1,0 +1,416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>公司网站1</title>
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/index1.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.DB_tabMotionBanner.min.js"></script>
+    <script type="text/javascript" src="js/slides.min.jquery.js"></script>
+    <script type="text/javascript" src='js/jquery.easing.min.js'></script>
+    <script type="text/javascript" src='js/loopedSlider.js'></script>
+    <script>
+        $(function () {
+            $('#slides').slides({
+                preload: true,
+                preloadImage: 'img/loading.gif',
+                play: 5000,
+                pause: 2500,
+                hoverPause: true,
+                animationStart: function () {
+                    $('.caption').animate({
+                        bottom: -35
+                    }, 100);
+                },
+                animationComplete: function (current) {
+                    $('.caption').animate({
+                        bottom: 0
+                    }, 200);
+                    if (window.console && console.log) {
+                        // example return of current slide number
+                        console.log(current);
+                    };
+                }
+            });
+
+
+            $('.DB_tab25').DB_tabMotionBanner({
+                key: 'b28551',
+                autoRollingTime: 10000,
+                bgSpeed: 500,
+                motion: {
+                    DB_1_1: { left: -50, opacity: 0, speed: 1000, delay: 500 },
+                    DB_1_2: { left: -50, opacity: 0, speed: 1000, delay: 1000 },
+                    DB_1_3: { left: 100, opacity: 0, speed: 1000, delay: 1500 },
+                    DB_2_1: { top: 50, opacity: 0, speed: 1000, delay: 500 },
+                    DB_2_2: { top: 50, opacity: 0, speed: 1000, delay: 1000 },
+                    DB_2_3: { top: 100, opacity: 0, speed: 1000, delay: 1500 },
+                    DB_3_1: { left: -50, opacity: 0, speed: 1000, delay: 500 },
+                    DB_3_2: { top: 50, opacity: 0, speed: 1000, delay: 1000 },
+                    DB_3_3: { top: 0, opacity: 0, speed: 1000, delay: 1500 },
+                    DB_4_1: { top: 50, opacity: 0, speed: 1000, delay: 500 },
+                    DB_4_2: { top: 0, opacity: 0, speed: 1000, delay: 1000 },
+                    DB_4_3: { top: 0, opacity: 0, speed: 1000, delay: 1500 },
+                    DB_4_4: { top: 30, opacity: 0, speed: 1000, delay: 2000 },
+                    DB_4_5: { top: 100, opacity: 0, speed: 1000, delay: 3000 },
+                    end: null
+                }
+            })
+
+            //道诚隐现
+            $('.dhtp').mouseover(function () {
+                $('.dc').show();
+            })
+            $('.dhtp').mouseout(function () {
+                $('.dc').hide();
+            })
+
+            //广告轮播隐现
+            $(window).scroll(function() {
+                var windowHeight = $(window).scrollTop() + 0;
+                var sideHeight = $('.nav').height();
+                if (windowHeight > sideHeight) {
+                    $('.DB_tab25').hide(500)
+                    $('.nav').css({
+                        'position' : 'fixed',
+                        'top' :'0',
+                        'left':'0',
+                        'z-index':'1000'
+                    });
+                } else {
+                    $('.DB_tab25').show(2000);
+                    $('.nav').css({
+                        'position' : 'static'
+                    });
+                }
+
+            });
+
+
+        });
+
+        function showA(obj)
+        {
+            obj.src="images/yuannei2.png";
+        }
+        function showB(obj)
+        {
+            obj.src="images/daocheng2.png"
+        }
+    </script>
+
+</head>
+<body style="background:#f6f7f9;height:100%;">
+<!-- 广告轮播 -->
+<div class="DB_tab25">
+    <ul class="DB_bgSet">
+        <li style="background:url(images/bg.jpg) no-repeat center top;"></li>
+        <li style="background:url(images/bg.jpg) no-repeat center top;"></li>
+        <li style="background:url(images/bg.jpg) no-repeat center top;"></li>
+    </ul>
+    <ul class="DB_imgSet">
+        <li>
+            <h1>Welcome to Pharos1</h1>
+            <p>欢迎使用道诚！我们现有的产品涉及各行各业，用最具专业性的分析方式为处在不同行业、 不同时期的企业设计出最灵活、适用的系统</p>
+            <p> <a href="#" target="_blank">了解道诚<span></span></a> </p>
+        </li>
+
+        <li>
+            <h1>Welcome to Pharos2</h1>
+            <p>欢迎使用道诚！我们现有的产品涉及各行各业，用最具专业性的分析方式为处在不同行业、 不同时期的企业设计出最灵活、适用的系统</p>
+            <p> <a href="#" target="_blank">了解道诚<span class="caret"></span></a> </p>
+        </li>
+
+        <li>
+            <h1>Welcome to Pharos3</h1>
+            <p>欢迎使用道诚！我们现有的产品涉及各行各业，用最具专业性的分析方式为处在不同行业、 不同时期的企业设计出最灵活、适用的系统</p>
+            <p> <a href="#">了解道诚<span></span></a> </p>
+        </li>
+    </ul>
+    <div class="DB_menuWrap">
+        <ul class="DB_menuSet">
+            <li><img src="images/btn_off.png" alt="" /></li>
+            <li><img src="images/btn_off.png" alt="" /></li>
+            <li><img src="images/btn_off.png" alt="" /></li>
+        </ul>
+        <div class="DB_next"><img src="images/nextArrow.png" alt="NEXT" /></div>
+        <div class="DB_prev"><img src="images/prevArrow.png" alt="PREV" /></div>
+    </div>
+</div>
+
+<!-- 导航 -->
+<div class="nav">
+    <div class="container">
+        <ul style="position:relative;">
+            <li><a href="index1.html" class="active">首页</a></li>
+            <li><a href="aboutour.html">关于我们</a></li>
+            <li><a href="Ourteam.html">我们的团队</a></li>
+            <li class="dhtp"><a href="index1.html"><img  id="a" src="images/yuannei2.png" alt="" onmouseover="showB(this)" onmouseout="showA(this)"></img></a></li>
+            <li><a href="ourCase.html">我们的案例</a></li>
+            <li><a href="connectionour.html">联系我们</a></li>
+            <li><a href="zhaopin.html">招聘</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- 关于我们 -->
+<div class="aboutUs">
+    <div class="container">
+        <h1>关于我们</h1>
+        <p class="line">___________</p>
+        <p>以提高业务效率及流畅性为目标，带动企业流程电子化及智能化。</p>
+        <div id="loopedSlider">
+            <div id="slider-block">
+                <!--下面的UL是左右箭头-->
+                <ul class="nav-buttons">
+                    <li id="p"><a href="#" class="previous arrow"><img src="images/qian.png" class="qian"></a></li>
+                    <li id="n"><a href="#" class="next arrow"><img src="images/hou.png" class="hou"></a></li>
+                </ul>
+                <div class="contain">
+                    <div id="slide-1" class="slide">
+                        <ul class="widget">
+                            <li>
+                                <img src="images/pic1.jpg" />
+                            </li>
+                        </ul>
+                        <ul class="widget">
+                            <li>
+                                <img src="images/pic2.jpg" />
+                            </li>
+                        </ul>
+                        <ul class="widget">
+                            <li>
+                                <img src="images/pic3.jpg" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--第一层-->
+                    <div id="slide-2" class="slide">
+                        <ul class="widget">
+                            <li>
+                                <img src="images/pic1.jpg" />
+                            </li>
+                        </ul>
+                        <ul class="widget">
+                            <li>
+                                <img src="images/pic2.jpg" />
+                            </li>
+                        </ul>
+                        <ul class="widget">
+                            <li>
+                                <img src="images/pic3.jpg" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--第二层-->
+                </div>
+            </div>
+        </div>
+        <p style="text-align:left;line-height:25px;margin:0 180px 0 150px;">
+            以提高业务效率及流畅性为目标，带动企业流程电子化及智能化。我们现有的产品涉及各行各业，主要是运用欧美流行的BABOK辨析
+            法将管理层和最终用户的核心需求进行彻底分析，用最具专业性的分析方式为处在不同行业...
+        </p>
+        <p><a href="#">我们的服务<span></span></a></p>
+    </div>
+</div>
+
+<!-- 我们的团队 -->
+<div class="ourTeam">
+    <div class="container">
+        <h1>我们的团队</h1>
+        <p class="line">___________</p>
+        <p>我们用欧美主流的BABOK辨析法挖掘及分析客户不同层面的核心需求，而为他们 设计及开发最灵活最适用的商业应用流程。</p>
+        <!--slide2-->
+        <div id="container">
+            <div id="example">
+                <div id="slides">
+                    <div class="slides_container">
+                        <div>
+                            <div class="people peopleFirst">
+                                <dl>
+                                    <dt><img src="images/ren1.png" alt="" /></dt>
+                                    <dd class="name">任韬</dd>
+                                    <dd>总经理</dd>
+                                </dl>
+                                <p>任韬先生曾任微软咨询服务项目经理，同时兼任加拿大政府科技顾问，以及国际商业分析机构 (International Institute of Business Analysis) 驻温哥华分部的最年轻的董事会成员</p>
+                            </div>
+                            <div class="people">
+                                <dl>
+                                    <dt><img src="images/ren2.png" alt="" /></dt>
+                                    <dd class="name">任韬</dd>
+                                    <dd>总经理</dd>
+                                </dl>
+                                <p>作为技术总监，刘光宇博士拥有15年的开发经验。刘博士在多个大型项目中负责架构的设定，以及带领道诚的开发团队以最合理的方法满足客户的需求。</p>
+                            </div>
+                            <div class="people">
+                                <dl>
+                                    <dt><img src="images/ren3.png" alt="" /></dt>
+                                    <dd class="name">任韬</dd>
+                                    <dd>总经理</dd>
+                                </dl>
+                                <p>任韬先生曾任微软咨询服务项目经理，同时兼任加拿大政府科技顾问，以及国际商业分析机构 (International Institute of Business Analysis) 驻温哥华分部的最年轻的董事会成员。</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="people peopleFirst">
+                                <dl>
+                                    <dt><img src="images/ren1.png" alt="" /></dt>
+                                    <dd class="name">任韬</dd>
+                                    <dd>总经理</dd>
+                                </dl>
+                                <p>任韬先生曾任微软咨询服务项目经理，同时兼任加拿大政府科技顾问，以及国际商业分析机构 (International Institute of Business Analysis) 驻温哥华分部的最年轻的董事会成员</p>
+                            </div>
+                            <div class="people">
+                                <dl>
+                                    <dt><img src="images/ren2.png" alt="" /></dt>
+                                    <dd class="name">任韬</dd>
+                                    <dd>总经理</dd>
+                                </dl>
+                                <p>作为技术总监，刘光宇博士拥有15年的开发经验。刘博士在多个大型项目中负责架构的设定，以及带领道诚的开发团队以最合理的方法满足客户的需求。</p>
+                            </div>
+                            <div class="people">
+                                <dl>
+                                    <dt><img src="images/ren3.png" alt="" /></dt>
+                                    <dd class="name">任韬</dd>
+                                    <dd>总经理</dd>
+                                </dl>
+                                <p>任韬先生曾任微软咨询服务项目经理，同时兼任加拿大政府科技顾问，以及国际商业分析机构 (International Institute of Business Analysis) 驻温哥华分部的最年轻的董事会成员。</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="people peopleFirst">
+                                <dl>
+                                    <dt><img src="images/ren1.png" alt="" /></dt>
+                                    <dd class="name">任韬</dd>
+                                    <dd>总经理</dd>
+                                </dl>
+                                <p>任韬先生曾任微软咨询服务项目经理，同时兼任加拿大政府科技顾问，以及国际商业分析机构 (International Institute of Business Analysis) 驻温哥华分部的最年轻的董事会成员</p>
+                            </div>
+                            <div class="people">
+                                <dl>
+                                    <dt><img src="images/ren2.png" alt="" /></dt>
+                                    <dd class="name">任韬</dd>
+                                    <dd>总经理</dd>
+                                </dl>
+                                <p>作为技术总监，刘光宇博士拥有15年的开发经验。刘博士在多个大型项目中负责架构的设定，以及带领道诚的开发团队以最合理的方法满足客户的需求。</p>
+                            </div>
+                            <div class="people">
+                                <dl>
+                                    <dt><img src="images/ren3.png" alt="" /></dt>
+                                    <dd class="name">任韬</dd>
+                                    <dd>总经理</dd>
+                                </dl>
+                                <p>任韬先生曾任微软咨询服务项目经理，同时兼任加拿大政府科技顾问，以及国际商业分析机构 (International Institute of Business Analysis) 驻温哥华分部的最年轻的董事会成员。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="buttons">
+                        <li><a href="###" class="prev arrow">&lt;</a></li>
+                        <li><a href="###" class="next arrow">&gt;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 我们的产品 -->
+<div class="ourProduct">
+    <div class="container">
+        <h1>我们的产品</h1>
+        <p class="line">___________</p>
+        <p>我们用欧美主流的BABOK辨析法挖掘及分析客户不同层面的核心需求，而为他们 设计及开发最灵活最适用的商业应用流程。</p>
+        <div class="product">
+            <dl>
+                <dt><img src="images/product1.png" /></dt>
+                <dd class="box1">金融交易风险分析</dd>
+                <dd>管理软件系统</dd>
+            </dl>
+            <dl>
+                <dt><img src="images/product2.png" /></dt>
+                <dd class="box1">Sohema</dd>
+                <dd>客户关系管理系统</dd>
+            </dl>
+            <dl>
+                <dt><img src="images/product3.png" /></dt>
+                <dd class="box1">Diggit</dd>
+                <dd>电子商务社交平台</dd>
+            </dl>
+            <dl>
+                <dt><img src="images/product4.png" /></dt>
+                <dd class="box1">Collabware</dd>
+                <dd>数据分析引擎</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- 我们的案例 -->
+<div class="ourCase">
+    <div class="container">
+        <h1>我们的案例</h1>
+        <p class="line">___________</p>
+        <p>我们的使命，是让工作变得更容易</p>
+        <div class="case">
+            <dl>
+                <dt><img src="images/casePic1.png" /></dt>
+                <dd class="caseBox1">中化石油有限公司 </dd>
+                <dd class="caseBox2">风险分析系统</dd>
+                <dd class="caseBox3">[系统设计 开发]</dd>
+            </dl>
+        </div>
+        <div class="case">
+            <dl>
+                <dt><img src="images/casePic2.png" /></dt>
+                <dd class="caseBox1">枫客公司</dd>
+                <dd class="caseBox2">电子商务管理系统</dd>
+                <dd class="caseBox3">[网上订购蛋糕平台系统设计 开发]</dd>
+            </dl>
+        </div>
+        <div class="case">
+            <dl>
+                <dt><img src="images/casePic3.png" /></dt>
+                <dd class="caseBox1">恒致冷暖气公司 </dd>
+                <dd class="caseBox2">客户管理系统</dd>
+                <dd class="caseBox3">[ 网络应用维护  优化  手机APP开发 ]</dd>
+            </dl>
+        </div>
+        <div class="case">
+            <dl>
+                <dt><img src="images/casePic4.png" /></dt>
+                <dd class="caseBox1">南顺鳄鱼园有限公司 </dd>
+                <dd class="caseBox2">企业网站</dd>
+                <dd class="caseBox3">[ 网站设计  开发  维护  网上订票系统 ]</dd>
+            </dl>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footerContent">
+            <div class="footerLeft">
+                <div>
+                    <a href="#"><img src="images/footer-pic1.png" /></a>
+                </div>
+            </div>
+            <div class="footerCenter">
+                <ul>
+                    <li>电话：(0592) 5962 616 </li>
+                    <li>电邮：info@xmpharos.com</li>
+                </ul>
+            </div>
+            <div class="footerRight">
+                <ul>
+                    <li>总部地址：厦门市思明区软件园二期望海路北二区23号之二207</li>
+                    <li>开发部地址：厦门市火炬高新区软件园创新大厦A区#302B单元</li>
+                </ul>
+            </div>
+            <p>道诚(厦门)信息科技有限公司&nbsp;&nbsp;    Copyright 2014 © Pharos Systems International.All rights reserved.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

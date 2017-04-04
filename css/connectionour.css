@@ -1,0 +1,12 @@
+/*联系我们*/
+.top{background-color: #f6f7f9;;  left: 0;  position: fixed;  top: 0;  width: 100%;  z-index: 1000;}
+.con1{ background:no-repeat;position:absolute;left:0px;top:100px;}
+.con2{color: #000000;margin-left:200px ;margin-top:50px;}
+.con21 p{color: #555555;font-size: 30px;}
+.con22 p{color:#9d9d9d;font-size: 16px;}
+.con23{color:#9d9d9d;font-size: 16px;}
+.conh{margin-bottom: 80px;}
+.line{color: #eeeeee;margin-top: 8px;margin-bottom: 22px;}
+.con22 .but{margin-bottom: 100px;}
+.con22 .but1{margin-bottom: 8px;}
+.con23 .but1{margin-bottom: 8px;}

@@ -1,0 +1,282 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>我们的案例详情页</title>
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/ourCaseDetail.css" rel="stylesheet" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+   
+    <script>
+        $(function () {
+            var index = 0;
+			//下一张按钮事件
+            $(".next").click(function () {
+                $(".item").eq(index).fadeOut(1000);
+                index++;
+                if (index > $(".item").length - 1) {
+                    index = 0;
+                }
+                $(".item").eq(index).fadeIn(300);
+            });
+			//上一张按钮事件
+            $(".pre").click(function () {
+                $(".item").eq(index).fadeOut(1000);
+                index--;
+                if (index < 0) {
+                    index = $(".item").length - 1;
+                }
+                $(".item").eq(index).fadeIn(300);
+            });
+			
+      	   //左侧下拉滚动	
+			$(window).scroll(function() {
+				var windowHeight = $(window).scrollTop() + 220;
+				var sideHeight = $('.leftDetail').height();
+				if (windowHeight > sideHeight) {
+					$('.leftDetail').css({
+						'position' : 'fixed',
+						top: -(sideHeight - 600),
+					});
+					$('.tubiao').show();				
+				} else {
+					$('.leftDetail').css({
+						'position' : 'static'
+					});					
+					$('.tubiao').hide();
+					
+				}
+			});
+
+            //左侧滚动切换	
+			var index = 0;
+            //下一张按钮事件
+			$(".xs").click(function () {
+			    $(".items").eq(index).fadeOut(300);
+			    index++;
+			    if (index > $(".items").length - 1) {
+			        index = 0;
+			    }
+			    $(".items").eq(index).fadeIn(300);
+			});
+            //上一张按钮事件
+			$(".xx").click(function () {
+			    $(".items").eq(index).fadeOut(300);
+			    index--;
+			    if (index < 0) {
+			        index = $(".items").length - 1;
+			    }
+			    $(".items").eq(index).fadeIn(300);
+			});
+        });
+
+
+        //function scroll_news() {
+        //    $(function () {
+        //        $('.leftDetail li').eq(0).fadeOut('slow', function () {
+        //            //   alert($(this).clone().html());
+        //            //克隆:不用克隆的话，remove()就没了。
+        //            $(this).clone().appendTo($(this).parent()).fadeIn('slow');
+        //            $(this).remove();
+        //        });
+        //    });
+        //}
+
+
+        //function scroll_news2() {
+        //    $(function () {
+        //        $('.leftDetail li').eq($('.leftDetail li').length-1).fadeOut('slow', function () {
+        //            //   alert($(this).clone().html());
+        //            //克隆:不用克隆的话，remove()就没了。
+        //            $(this).clone().prependTo($(this).parent()).fadeIn('slow');
+        //            $(this).remove();
+        //        });
+        //    });
+        //}
+    </script>
+</head>
+<body>
+    <!--  header -->
+    <div class="kong">
+
+    </div>
+    <div class="top">
+        <div class="container">
+            <div class="topContent">
+                <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo" /></a></div>
+                <div class="navigation">
+                    <ul class="topnav">
+                        <li><a href="index.html">首页</a></li>
+	                    <li><a href="aboutour.html">关于我们</a></li>
+	                    <li><a href="Ourteam.html">我们的团队</a></li>
+	                    <li><a href="ourCase.html" class="current">我们的案例</a></li>
+	                    <li><a href="connectionour.html">联系我们</a></li>
+	                    <li><a href="zhaopin.html">招聘</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  标语 -->
+    <div class="banner">
+        <h1>我们的案例</h1>
+        <p>我们的使命，是让工作变得更容易</p>
+    </div>
+
+    <!--  回到首页 -->
+    <div class="backHomepage">
+        <a href="ourCase.html">返回案例首页</a>
+    </div>
+
+    <!--  案例详情 -->
+    <div class="CaseDetail">
+        <div class="container">
+            <div class="detail">
+                <div class="leftDetail">
+                    <ul class="items" style="display:block;">
+                        <li><a href="#" class="current">中化石油</a></li>
+                        <li><a href="#">枫客公司</a></li>
+                        <li><a href="#">恒致冷暖气</a></li>
+                        <li><a href="#">南顺鳄鱼园</a></li>
+                        <li><a href="#">中化石油</a></li>
+                        <li><a href="#">枫客公司</a></li>
+                        <li><a href="#">恒致冷暖气</a></li>
+                        <li><a href="#">南顺鳄鱼园</a></li>
+                    </ul>                                        
+                    <ul class="items" style="display:none;">
+                        <li><a href="#" class="current">中化石</a></li>
+                        <li><a href="#">枫客公</a></li>
+                        <li><a href="#">恒致冷</a></li>
+                        <li><a href="#">南顺鳄</a></li>
+                        <li><a href="#">中化石</a></li>
+                        <li><a href="#">枫客公</a></li>
+                        <li><a href="#">恒致冷</a></li>
+                        <li><a href="#">南顺鳄</a></li>
+                    </ul>                   
+                    <ul class="items" style="display:none;">
+                        <li><a href="#" class="current">中化</a></li>
+                        <li><a href="#">枫客</a></li>
+                        <li><a href="#">恒致</a></li>
+                        <li><a href="#">南顺</a></li>
+                        <li><a href="#">中化</a></li>
+                        <li><a href="#">枫客</a></li>
+                        <li><a href="#">恒致</a></li>
+                        <li><a href="#">南顺</a></li>
+                    </ul>                             
+                    <div class="tubiao"><a href="###" class="xs"><img src="images/leftDetail-xs.png" /></a><a href="###" class="xx"><img src="images/leftDetail-xx.png" /></a></div>                  
+                </div>
+                <div class="rightDetail">
+                    <div class="box" id="float01">
+                        <div class="leftBox">
+                            <img src="images/casePic1.png" alt="" />
+                        </div>
+                        <div class="rightBox">
+                            <p class="box1">中化石油有限公司</p>
+                            <p class="box1"><span>行业：电器设备</span><span>规模：500-1000人</span><span>地点：加拿大</span></p>
+                        </div>
+                        <p style="clear:both;padding-top: 15px;">中化石油有限公司成立于1988年5月21日，是中国中化集团公司的全资子公司，主要从事原油、成品油的进出口业务，是中化公司在国内经营石油贸易的专业公司。国际化经营为中化石油有限公司一大经营特色，公司具有开展石油贸易的国际品牌和竞争力。</p>
+                        <h2>风险分析系统<span>[系统设计 开发]</span></h2>
+                        <p style="text-indent:2em">2013年7月，受中化石油有限公司（以下简称“中化”）委托开发《中化石油市场风险计量分析项目》。中化面临的风险在于浮动的石油价格，货币之间存在的的汇率差，利率及交易对手的违约风险。我们的核心技术帮助客户量化市场交易风险。</p>
+                        <p style="text-indent:2em">整个项目的实施周期预期为一年，分为三期分段实施。目前已完成第二期的项目实施。我们不仅按时交付项目模块，并为客户开展讲座，帮助中化团队在最短时间内掌握系统的功能。</p>
+                    </div>
+                    <div class="box2" id="float02" >
+                        <h3>客户遇到哪些问题</h3>
+                        <p>1.我们的核心技术帮助客户量化市场交易风险。整个项目的实施周期预期为一年</p>
+                        <p>2.分为三期分段实施。目前已完成第二期的项目实施。我们不仅按时交付项目模块</p>
+                    </div>
+                    <div class="box2" id="float03" >
+                        <h3>本方案如何解决问题</h3>
+                        <p>整个项目的实施周期预期为一年，分为三期分段实施。目前已完成第二期的项目实施。我们不仅按时交付项目模块，并为客户开展讲座，帮助中化团队在最短时间内掌握系统的功能。</p>
+                    </div>
+                    <div class="box2" id="float04" >
+                        <h3>解决后客户得到哪些效益</h3>
+                        <p>中化面临的风险在于浮动的石油价格，货币之间存在的的汇率差，利率及交易对手的违约风险。我们的核心技术帮助客户量化市场交易风险。整个项目的实施周期预期为一年，分为三期分段实施。目前已完成第二期的项目实施。我们不仅按时交付项目模块，并为客户开展讲座，帮助中化团队在最短时间内掌握系统的功能。</p>
+                    </div>
+                    <div class="box2" id="float05" >
+                        <h3>解决过程中使用了哪些技术</h3>
+                        <p>我们的核心技术帮助客户量化市场交易风险。整个项目的实施周期预期为一年，分为三期分段实施。目前已完成第二期的项目实施。我们不仅按时交付项目模块，并为客户开展讲座，帮助中化团队在最短时间内掌握系统的功能。</p>
+                    </div>
+                    <div class="box2" id="float06" >
+                        <h3>客户的反馈</h3>
+                        <div class="feedback">
+                            <div class="feedbackContent">
+                                <dl>
+                                    <dt><img src="images/feedback-pic.png" alt="" /></dt>
+                                    <dd>客户经理</dd>
+                                </dl>
+                                <div class="content">
+                                    <p class="p1">我们的核心技术帮助客户量化市场交易风险。整个项目的实施周期预期为一年，分为三期分段实施。目前已完成第二期的项目实施。我们不仅按时交付项目模块，并为客户开展讲座，帮助中化团队在最短时间内掌握系统的功能。</p>
+                                </div>
+                                <dl>
+                                    <dt><img src="images/feedback-pic.png" alt="" /></dt>
+                                    <dd>客户经理</dd>
+                                </dl>
+                                <div class="content">
+                                    <p class="p2">我们不仅按时交付项目模块，并为客户开展讲座</p>
+                                </div>
+                                <div class="content">
+                                    <p class="p3">我们不仅按时交付项目模块，并为客户开展讲座</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content">
+                            <div id="picbox">
+                                <ul class="buttons">
+                                    <li><a href="###" class="pre arrow"><img src="images/qian.png" class="qian" style="width:36px;height:36px;"></a></li>
+                                    <li><a href="###" class="next arrow"><img src="images/hou.png" class="hou" style="width:36px;height:36px;"></a></li>
+                                </ul>
+                                <div class="item" style="display:block;">
+                                    <div class="pic">
+                                        <img src="images/feedback-lp.png" />
+                                    </div>
+                                    <div class="des">系统部分图片展示1</div>
+                                </div>
+                                <div class="item" style="display:none;">
+                                    <div class="pic">
+                                        <img src="images/feedback-lp.png" />
+                                    </div>
+                                    <div class="des">系统部分图片展示2</div>
+                                </div>
+                                <div class="item" style="display:none;">
+                                    <div class="pic">
+                                        <img src="images/feedback-lp.png" />
+                                    </div>
+                                    <div class="des">系统部分图片展示3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footerContent">
+                <div class="footerLeft">
+                    <div>
+                        <a href="#"><img src="images/footer-pic1.png" /></a>
+                    </div>
+                </div>
+                <div class="footerCenter">
+                    <ul>
+                        <li>电话：(0592) 5962 616 </li>
+                        <li>电邮：info@xmpharos.com</li>
+                    </ul>
+                </div>
+                <div class="footerRight">
+                    <ul>
+                        <li>总部地址：厦门市思明区软件园二期望海路北二区23号之二207</li>
+                        <li>开发部地址：厦门市火炬高新区软件园创新大厦A区#302B单元</li>
+                    </ul>
+                </div>
+                <p>道诚(厦门)信息科技有限公司&nbsp;&nbsp;    Copyright 2014 © Pharos Systems International.All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

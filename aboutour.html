@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>关于我们</title>
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/aboutUs.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.DB_tabMotionBanner.min.js"></script>
+    <script type="text/javascript" src="js/slides.min.jquery.js"></script>
+    <script type="text/javascript" src='js/jquery.easing.min.js'></script>
+    <script type="text/javascript" src='js/loopedSlider.js'></script>
+    <script>
+        type = "text/javascript"
+        $(function () {
+            $('#slides').slides({
+                preload: true,
+                preloadImage: 'img/loading.gif',
+                play: 5000,
+                pause: 2500,
+                hoverPause: true,
+                animationStart: function () {
+                    $('.caption').animate({
+                        bottom: -35
+                    }, 100);
+                },
+                animationComplete: function (current) {
+                    $('.caption').animate({
+                        bottom: 0
+                    }, 200);
+                    if (window.console && console.log) {
+                        // example return of current slide number
+                        console.log(current);
+                    };
+                }
+            })
+
+
+            </script>
+</head>
+<body>
+<!--  header -->
+<div class="kong">
+
+</div>
+<div class="top">
+    <div class="container">
+        <div class="topContent" >
+            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo" /></a></div>
+            <div class="navigation">
+                <ul class="topnav">
+                    <li><a href="index1.html">首页</a></li>
+                    <li><a href="aboutour.html"  class="current">关于我们</a></li>
+                    <li><a href="Ourteam.html">我们的团队</a></li>
+                    <li><a href="ourCase.html">我们的案例</a></li>
+                    <li><a href="connectionour.html">联系我们</a></li>
+                    <li><a href="zhaopin.html">招聘</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  标语 -->
+<div class="banner">
+    <h1>关于我们</h1>
+    <p> 以提高业务效率及流畅性为目标，带动企业流程电子化及智能化。我们现有的产品涉及各行各业，主要是运用欧美流行的BABOK辨析法将管理层和最终用户的核心需求进行彻底分析，用最具专业性的分析方式为处在不同行业...</p>
+</div>
+
+
+<!-- 关于我们 -->
+<div class="aboutUs">
+    <div class="container">
+        <div id="loopedSlider">
+            <div id="slider-block">
+                <!--下面的UL是左右箭头-->
+                <ul class="nav-buttons">
+                    <li id="p"><a href="#" class="previous arrow"><img src="images/qian.png" class="qian"></a></li>
+                    <li id="n"><a href="#" class="next arrow"><img src="images/hou.png" class="hou"></a></li>
+                </ul>
+                <div class="contain">
+                    <div id="slide-1" class="slide">
+                        <ul class="widget">
+                            <li class="widget1">
+                                <img src="images/pic1.jpg" />
+                            </li>
+                            <li class ="widget1">
+                                <img src="images/pic2.jpg" />
+                            </li>
+                            <li class="widget1">
+                                <img src="images/pic3.jpg" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--第一层-->
+                    <div id="slide-2" class="slide">
+                        <ul class="widget">
+                            <li class="widget1">
+                                <img src="images/pic1.jpg" />
+                            </li>
+                            <li class="widget1">
+                                <img src="images/pic2.jpg" />
+                            </li>
+                            <li class="widget1">
+                                <img src="images/pic3.jpg" />
+                            </li>
+                        </ul>
+                    </div>
+                    <!--第二层-->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="coursexinging-text" >
+            <p>以提高业务效率及流畅性为目标，带动企业流程电子化及智能化。我们现有的产品涉及各行各业，主要是运用欧美流行
+                BABOK辨析法将管理层和最终用户的核心需求进行彻底分析，用最专业的分析方式为处在不同行业...</p>
+        </div>
+        <div class="gushi">
+            <p>道诚故事</p>
+        </div>
+        <p class="line">_________</p>
+        <div class="gushi1">
+            <p>道诚的团队来自世界各地，而它的故事源于一个叫海晖的公司。</p>
+        </div><br>
+        <div class="gushi2">
+            <p>海晖东方（厦门）信息科技有限公司（以下简称海晖）成立于2013年，核心开发及管理团队
+                的成员拥有美国和加拿大的高等教育以及北美资深的专业从业背景。送死业务范围本为高端
+                金融服务应用软件的咨询，定制开发，优化及维护服务。后来，为满足出金融外其他行业的
+                需求，决定成立道诚（厦门）信息科技有限公司。</p>
+        </div>
+
+        <div class="gushi">
+            <p>道诚简介</p>
+        </div>
+        <p class="line">_________</p>
+        <div class="gushi1">
+            <p>我们用欧美主流的BABOK辨析法挖掘及分析客户不同层面的核心需求，而
+                为他们设计及开发最灵活最适用的商业应用流程。</p>
+        </div><br>
+        <div class="gushi2" id="hangju">
+            <p>道城的商业模式是独特的，它运用北美的商业分析技术，道诚的商业模式是独特的。跟客户对接是，将管
+                理层和最终用户的需求进行彻底分析，跨行业的设计出最美观,最实用，最灵
+                活的系统。聚全球范围统计，运用一般方式进行的软件开发失败率高达40%。但
+                商业分析技术的运用可以让软件开发的成功率上升20%。道诚的发展方向以网
+                络应用开发及移动应用开发为主。</p>
+        </div>
+        <div class="gushi">
+            <p>道诚愿景</p>
+        </div>
+        <p class="line">_________</p>
+        <div class="gushi1">
+            <p>以提高业务效率及流畅性为目标，带动企业流程电子化及智能化。</p>
+        </div><br>
+
+        <div class="gushi">
+            <p>道诚使命</p>
+        </div>
+        <p class="line">_________</p>
+        <div class="gushi1">
+            <p>让工作变得更容易。</p>
+        </div>
+        <p><a href="ourService.html">我们的服务<span></span></a></p>
+</div>
+</div>
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footerContent">
+            <div class="footerLeft">
+                <div>
+                    <a href="#"><img src="images/footer-pic1.png" /></a>
+                </div>
+            </div>
+            <div class="footerCenter">
+                <ul>
+                    <li>电话：(0592) 5962 616 </li>
+                    <li>电邮：info@xmpharos.com</li>
+                </ul>
+            </div>
+            <div class="footerRight">
+                <ul>
+                    <li>总部地址：厦门市思明区软件园二期望海路北二区23号之二207</li>
+                    <li>开发部地址：厦门市火炬高新区软件园创新大厦A区#302B单元</li>
+                </ul>
+            </div>
+            <p>道诚(厦门)信息科技有限公司&nbsp;&nbsp;    Copyright 2014 © Pharos Systems International.All rights reserved.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

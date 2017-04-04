@@ -1,0 +1,38 @@
+/* 回到首页 */
+.backHomepage { height: 80px; background: #f6f7f9; text-align: center; }
+.backHomepage a { color: #c8ccd2; height: 80px; text-align: center; display: inline-block; background:url(../images/backHomepage.png) no-repeat left center;padding-left:25px;line-height:80px;}
+
+/* 产品的详细 */
+.kong{height: 98px;}
+.top{background-color: #f6f7f9;;  left: 0;  position: fixed;  top: 0;  width: 100%;  z-index: 1000;}
+.banner p{margin-left: 260px;margin-right: 260px;}
+.ProductDetail { height: auto; }
+.detail { margin-left: 29px; margin-right: 29px; }
+.leftDetail { width: 190px; float: left; position: static;top:auto;overflow:hidden;height:534px;}
+.leftDetail ul { width: 184px;margin-top:45px;position:relative;}
+.leftDetail ul li { width: 182px; height: 44px; border: 1px solid #ccc; text-align: center; line-height: 25px; margin-bottom: 60px;border-radius:30px;}
+.leftDetail ul li a {color: #5c85a3; display: block; font-size: 15px;text-align: center;line-height: 22px;border-radius:30px;}
+
+.rightDetail { width: 905px; float: right; }
+.rightDetail .box { padding-top: 45px; }
+.rightDetail .box .da{font-size: 20px;color: #54595d;}
+.rightDetail .box .line{color:#eeeeee;padding: 0 0 30px 0;}
+.rightDetail .box p { line-height: 25px; font-size: 14px; }
+
+#content { width: 700px; height: 360px; position: relative; margin: 55px auto;padding-bottom:30px;clear:both;  }
+.item { width: 680px; height: 360px; border: 10px solid #fff; position: absolute;}
+.item img { width: 680px; height: 360px; }
+.des {  height: 30px; text-align: center; line-height: 30px;color: #78797e;}
+.buttons { list-style-type: none; margin: 0; padding: 0; }
+.arrow { cursor: pointer; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px; z-index: 2; color: black; }
+.pre { position: absolute; top: 160px; left: -60px; }
+.next { position: absolute; top: 160px; right: -60px; }
+.row{margin-bottom: 50px;}
+.rightDetail .box p span{ color:#7c8ea3;line-height: 35px; }
+.lanse{color: #5c85a3;margin-bottom: 50px;margin-left: 15px;font-size: 24px;}
+.content1{height:auto;text-align:center;padding-top:40px;margin-bottom:50px;}
+.content1 .case{width:260px;height:200px;border:1px solid #ccc;float:left;margin-bottom:80px;margin-left:20px;}
+.content1 .case dt{ height:94px;padding:20px 0 10px 0;}
+.content1 .case dd{line-height:30px;}
+.content1 .case dd.caseBox1{font-size:20px;}
+.content1 .case dd.caseBox2{font-size:18px;color:#7c8ea3;}

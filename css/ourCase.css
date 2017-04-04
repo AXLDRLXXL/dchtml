@@ -1,0 +1,9 @@
+﻿/* 案例  */
+.top{background-color: #f6f7f9;;  left: 0;  position: fixed;  top: 0;  width: 100%;  z-index: 1000;}
+.content{height:auto;text-align:center;padding-top:103px;margin-bottom:45px;}
+.content .case{width:378px;height:256px;border:1px solid #dbe6ef;float:left;margin-bottom:45px;margin-left:20px;cursor: pointer;}
+.content .case dt{ height:94px;padding:45px 0 0px 0;}
+.content .case dd{line-height:30px;}
+.content .case dd.caseBox1{font-size:20px;color:#5a5a5a;}
+.content .case dd.caseBox2{font-size:18px;color:#7c8ea3;}
+.content .case dd.caseBox3{font-size:16px;color:#dbe6ef;}

@@ -1,0 +1,45 @@
+/* �������� */
+.top{background-color: #f6f7f9;;  left: 0;  position: fixed; top: 0;  width: 100%;  z-index: 1000;}
+.aboutUs { height: 1570px; background: #fff; position: relative; text-align: center; }
+.banner p{margin-left: 260px;margin-right: 260px;}
+/*slider*/
+#slider-block { width: 960px; }
+.slide { width: 904px; }
+#loopedSlider { width: 960px; }
+#slider-block { overflow: hidden; }
+.contain { position: relative; overflow: hidden; margin: 0 auto; width: 904px; }
+.contain div { opacity: 0; z-index: 0; position: absolute; top: 0; left: 0; }
+.contain div div { opacity: 1; z-index: auto; position: static; padding: 0px; }
+#loopedSlider { position: relative; margin: 0 auto; }
+#loopedSlider .nav-buttons { list-style-type: none; margin: 0; padding: 0; }
+.arrow { cursor: pointer; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px; z-index: 2; color: black; }
+#loopedSlider li#p { position: absolute; top: 150px; left: -20px; }
+#loopedSlider li#n { position: absolute; top: 150px; right: -20px; }
+.contain ul.widget { float: left; color: #eeeeee; margin-right: 1px; }
+.contain ul.widget .widget1{float:left;margin-right:1px;margin-top:50px;}
+.aboutUs p a { background: url(../images/aboutUs-bg.png); width: 198px; height: 58px; display: block; line-height: 58px; margin: 0 auto; color: #fff; font-size: 18px; margin-top:100px;margin-bottom: 80px;  }
+.aboutUs p a span { display: inline-block; width: 7px; height: 11px;
+background: url(../images/aboutUs-sjx.png) no-repeat right center; padding-left: 10px; }
+.gushi{ margin-top: 70px; text-align: center;  }
+.gushi p{font-size: 28px;}
+.line{ text-align: center;  padding: 10px 0 30px 0;  color:#eeeeee; }
+.gushi1{  color:#9d9d9d;  text-align: center; font-size: 14px; }
+.gushi2 p{
+            font-size: 16px;
+            margin-right: 150px;
+            margin-left: 150px;
+            text-align:left;
+            color: #5e5e5e;
+            line-height:25px;
+        }
+.coursexinging-text p{
+            font-size: 16px;
+            margin-left: 180px;
+            margin-right: 180px;
+            margin-top: 10px;
+            text-align:left;
+            margin-bottom: 20px;
+            color:#5e5e5e;
+            line-height:25px;
+        }
+
